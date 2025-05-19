@@ -25,7 +25,8 @@ Welcome to my interactive 3D portfolio built using **Three.js** and **React**! T
 
 ## 🎮 Live Demo
 
-👉 [View Live Portfolio]([https://portfolio3js-five.vercel.app/])
+👉 [View Live Portfolio] 
+https://portfolio3js-five.vercel.app
 
 ## 📂 Project Structure
 
