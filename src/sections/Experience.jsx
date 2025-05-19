@@ -6,7 +6,7 @@ import Developer from '../components/Developer.jsx';
 import CanvasLoader from '../components/CanvasLoader.jsx';
 import { workExperiences } from '../constants/index.js';
 
-const WorkExperience = () => {
+const Experience = () => {
     const [animationName, setAnimationName] = useState('idle');
 
     return (
@@ -62,4 +62,4 @@ const WorkExperience = () => {
     );
 };
 
-export default WorkExperience;
+export default Experience;
