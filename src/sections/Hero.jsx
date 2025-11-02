@@ -1,71 +1,81 @@
-import { Leva } from 'leva';
-import { Suspense } from 'react';
-import { Canvas } from '@react-three/fiber';
-import { useMediaQuery } from 'react-responsive';
-import { PerspectiveCamera } from '@react-three/drei';
-import CanvasLoader from '../components/CanvasLoader.jsx';
-import { calculateSizes } from '../constants/index.js';
-import HackerRoom from "../components/HackerRoom.jsx";
-import Target from "../components/Target.jsx";
-import ReactLogo from "../components/ReactLogo.jsx";
-import Rings from "../components/Rings.jsx";
-import Cube from "../components/Cube.jsx";
-import Button from "../components/Button.jsx";
-import HeroCamera from "../components/HeroCamera.jsx";
-
+import React from "react";
+import LiquidEther from "../components/LiquidEther";
+import TextType from "../components/TextType";
 const Hero = () => {
+  return (
+    <section className="" id="home">
+      <div
+        style={{ height: 600, position: "relative" }}
+        className="w-full overflow-hidden"
+      >
+        {/* Liquid Background */}
+        <LiquidEther
+          colors={["#5227FF", "#FF9FFC", "#B19EEF"]}
+          mouseForce={60}
+          cursorSize={130}
+          isViscous={false}
+          viscous={15}
+          iterationsViscous={16}
+          iterationsPoisson={16}
+          resolution={0.5}
+          isBounce={true}
+          dt={0.014}
+          BFECC={false}
+          autoSpeed={0.1}
+          autoIntensity={1.0}
+          takeoverDuration={0.1}
+          autoResumeDelay={3000}
+          autoRampDuration={0.3}
+        />
 
+        {/* Content Overlay */}
+        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-4 sm:px-6 md:px-10 pointer-events-none">
+          <div className="max-w-3xl">
+            {/* Heading */}
+            <h1
+              className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-6 leading-tight select-none 
+  [text-shadow:0_0_15px_rgba(100,100,255,0.6)] overflow-hidden whitespace-nowrap pr-2"
+            >
+              <TextType
+                text={["Code.", "Build.", "Evolve.", "Code. Build. Evolve."]}
+                typingSpeed={100}
+                deletingSpeed={50}
+                pauseDuration={1500}
+                showCursor={true}
+                cursorCharacter="|"
+                loop={true}
+              />
+            </h1>
 
-    const isSmall = useMediaQuery({ maxWidth: 440 });
-    const isMobile = useMediaQuery({ maxWidth: 768 });
-    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
+            {/* Subheading */}
+            <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-10 leading-relaxed drop-shadow-lg select-none">
+              I engineer next-gen web experiences — blending full-stack logic
+              with futuristic, interactive design.
+            </p>
 
-    const sizes = calculateSizes(isSmall, isMobile, isTablet);
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row justify-center gap-6 pointer-events-auto">
+              {/* Scroll to Work section */}
+              <a
+                href="#work"
+                className="px-8 py-3 bg-white text-purple-600 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-purple-400/30 hover:scale-105"
+              >
+                Explore My Work
+              </a>
 
-    return (
-        <section className="min-h-screen w-full flex flex-col relative" id="home">
-            <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
-                <p className="sm:text-3xl text-xl font-medium text-white text-center font-generalsans">
-                    Hi, I am Vansh <span className="waving-hand">👋</span>
-                </p>
-                <p className="hero_tag mb-4 text-gray_gradient">Building Products & Brands</p>
+              {/* Scroll to Contact section */}
+              <a
+                href="#contact"
+                className="px-8 py-3 border-2 border-white text-white rounded-full font-semibold text-lg hover:bg-white hover:text-purple-600 transition-all duration-300 shadow-lg hover:shadow-purple-400/30 hover:scale-105"
+              >
+                Let&apos;s Build Together
+              </a>
             </div>
-
-            <div className="w-full h-full absolute  inset-0">
-
-                <Leva />
-                <Canvas className="w-full h-full">
-                    <Suspense fallback={<CanvasLoader />}>
-
-
-                    <PerspectiveCamera makeDefault position={[0, 0, 20]} />
-
-                     <HeroCamera isMobile={isMobile}>
-                        <HackerRoom
-                            position={sizes.deskPosition}
-                            scale={sizes.deskScale}
-                            rotation={[0, -Math.PI, 0]}
-                    />
-                     </HeroCamera>
-                        <group>
-                            <Target position={sizes.targetPosition} />
-                            <ReactLogo position={sizes.reactLogoPosition} />
-                            <Rings position={sizes.ringPosition} />
-                            <Cube position={sizes.cubePosition} />
-                        </group>
-                     <ambientLight intensity={1} />
-                     <directionalLight position={[10, 10, 10]} intensity={0.5} />
-                    </Suspense>
-                </Canvas>
-            </div>
-
-            <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
-                <a href="#about" className="w-fit">
-                    <Button name="Let's work together" isBeam containerClass="sm:w-fit w-full sm:min-w-96" />
-                </a>
-            </div>
-        </section>
-    );
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Hero;

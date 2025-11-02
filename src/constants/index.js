@@ -58,50 +58,29 @@ export const clientReviews = [
 
 export const myProjects = [
   {
-    title: "Podcastr - AI Podcast Platform",
-    desc: "Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.",
+    title: "Travora - AI Travel Platform",
+    desc: "Travora is an intelligent travel companion platform that redefines how people explore the world. Powered by AI, it delivers personalized destination recommendations, interactive 3D globe exploration, and seamless trip management—all in one intuitive interface.",
     subdesc:
-      "Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.",
-    href: "",
+      "Built with React, Tailwind CSS, Appwrite, Stripe, and Google Generative AI, Travora combines innovation with scalability. Designed for modern travelers, it ensures smooth performance, secure bookings, and a visually immersive experience across all devices.",
+    href: "https://travora-agency.vercel.app/",
     texture: "/textures/project/project1.mp4",
-    logo: "/assets/project-logo1.png",
-    logoStyle: {
-      backgroundColor: "#2A1816",
-      border: "0.2px solid #36201D",
-      boxShadow: "0px 0px 60px 0px #AA3C304D",
-    },
+    logo: "/assets/project-logo1.svg",
     spotlight: "/assets/spotlight1.png",
     tags: [
-      {
-        id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
-      },
-      {
-        id: 2,
-        name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
-      },
-      {
-        id: 3,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
-      },
-      {
-        id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
-      },
+      { id: 1, name: "React.js", path: "/assets/react.svg" },
+      { id: 2, name: "TailwindCSS", path: "/assets/tailwindcss.png" },
+      { id: 3, name: "Appwrite", path: "/assets/appwrite.svg" },
+      { id: 4, name: "Stripe", path: "/assets/stripe.png" },
     ],
   },
   {
-    title: "LiveDoc - Real-Time Google Docs Clone",
-    desc: "LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.",
+    title: "Nike E-commerce — AI-Enhanced 3D Sneaker Store",
+    desc: "Nike E-commerce is an advanced AI-powered online store built for Nike sneakers — offering dynamic product creation, 3D visual previews, and seamless shopping experience.",
     subdesc:
-      "With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.",
-    href: "https://www.youtube.com/watch?v=y5vE8y_f_OM",
+      "Developed using Next.js 15, Tailwind CSS 4, TypeScript, Framer Motion, Zustand, Drizzle ORM with Neon (PostgreSQL), plus Stripe payments, Google Generative AI for product generation, and React Three Fiber for 3D visuals.",
+    href: "https://nike-ecommerce-five.vercel.app/",
     texture: "/textures/project/project2.mp4",
-    logo: "/assets/project-logo2.png",
+    logo: "/assets/project-logo2.svg",
     logoStyle: {
       backgroundColor: "#13202F",
       border: "0.2px solid #17293E",
@@ -109,73 +88,39 @@ export const myProjects = [
     },
     spotlight: "/assets/spotlight2.png",
     tags: [
-      {
-        id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
-      },
-      {
-        id: 2,
-        name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
-      },
-      {
-        id: 3,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
-      },
-      {
-        id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
-      },
+      { id: 1, name: "Next.js", path: "/assets/nextjs.svg" },
+      { id: 2, name: "TailwindCSS", path: "/assets/tailwindcss.png" },
+      { id: 3, name: "TypeScript", path: "/assets/typescript.png" },
+      { id: 4, name: "Zustand", path: "/assets/zustand.svg" },
+      { id: 5, name: "Drizzle ORM", path: "/assets/drizzleorm.png" },
+      { id: 6, name: "Stripe", path: "/assets/stripe.png" },
+      { id: 7, name: "React Three Fiber", path: "/assets/three.svg" },
     ],
   },
   {
-    title: "CarePulse - Health Management System",
-    desc: "An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.",
+    title: "Matty AI-Design Tool – Browser-Based Graphic Editor",
+    desc: "Matty AI-Design Tool is a powerful web studio that lets users design graphics and visual content directly in the browser — no desktop software required.",
     subdesc:
-      "With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.",
-    href: "https://www.youtube.com/watch?v=lEflo_sc82g",
+      "Built on a MERN stack with React, Fabric.js, Tailwind CSS, Node.js, Express, MongoDB and JWT auth, it offers an interactive canvas editor, layer management, export to PNG, and full CRUD dashboard for designs.",
+    href: "https://matty-design-tool-brown.vercel.app/",
     texture: "/textures/project/project3.mp4",
     logo: "/assets/project-logo3.png",
-    logoStyle: {
-      backgroundColor: "#60f5a1",
-      background:
-        "linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)",
-      border: "0.2px solid rgba(208, 213, 221, 1)",
-      boxShadow: "0px 0px 60px 0px rgba(35, 131, 96, 0.3)",
-    },
     spotlight: "/assets/spotlight3.png",
     tags: [
-      {
-        id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
-      },
-      {
-        id: 2,
-        name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
-      },
-      {
-        id: 3,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
-      },
-      {
-        id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
-      },
+      { id: 1, name: "React.js", path: "/assets/react.svg" },
+
+      { id: 3, name: "Node.js", path: "/assets/nodejs.svg" },
+      { id: 4, name: "Express.js", path: "/assets/express.svg" },
+      { id: 5, name: "MongoDB", path: "/assets/mongodb.svg" },
+      { id: 6, name: "TailwindCSS", path: "/assets/tailwindcss.png" },
     ],
   },
   {
-    title: "Horizon - Online Banking Platform",
-    desc: "Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.",
+    title: "MoneyMate – Expense Tracker",
+    desc: "MoneyMate empowers users to monitor income and expenses in real time, offering budgeting insight, data export, and intuitive dashboards.",
     subdesc:
-      "Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.",
-    href: "https://www.youtube.com/watch?v=PuOVqP_cjkE",
+      "Built with the MERN stack (React & Vite for the frontend; Node.js, Express, MongoDB & Mongoose on the backend), the app features secure JWT authentication, file upload with Multer, responsive design via Tailwind CSS, and supports downloading financial data as Excel files.",
+    href: "https://money-mate-1-9vqe.onrender.com/",
     texture: "/textures/project/project4.mp4",
     logo: "/assets/project-logo4.png",
     logoStyle: {
@@ -185,63 +130,12 @@ export const myProjects = [
     },
     spotlight: "/assets/spotlight4.png",
     tags: [
-      {
-        id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
-      },
-      {
-        id: 2,
-        name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
-      },
-      {
-        id: 3,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
-      },
-      {
-        id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
-      },
-    ],
-  },
-  {
-    title: "Imaginify - AI Photo Manipulation App",
-    desc: "Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.",
-    subdesc:
-      "Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.",
-    href: "https://www.youtube.com/watch?v=Ahwoks_dawU",
-    texture: "/textures/project/project5.mp4",
-    logo: "/assets/project-logo5.png",
-    logoStyle: {
-      backgroundColor: "#1C1A43",
-      border: "0.2px solid #252262",
-      boxShadow: "0px 0px 60px 0px #635BFF4D",
-    },
-    spotlight: "/assets/spotlight5.png",
-    tags: [
-      {
-        id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
-      },
-      {
-        id: 2,
-        name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
-      },
-      {
-        id: 3,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
-      },
-      {
-        id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
-      },
+      { id: 1, name: "React.js", path: "/assets/react.svg" },
+      { id: 2, name: "Vite", path: "/assets/vite.svg" },
+      { id: 3, name: "Node.js", path: "/assets/nodejs.svg" },
+      { id: 4, name: "Express.js", path: "/assets/express.svg" },
+      { id: 5, name: "MongoDB", path: "/assets/mongodb.svg" },
+      { id: 6, name: "TailwindCSS", path: "/assets/tailwindcss.png" },
     ],
   },
 ];
