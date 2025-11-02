@@ -25,6 +25,7 @@
     "react-dom": "^19.1.0",
     "react-globe.gl": "^2.33.2",
     "react-responsive": "^10.0.1",
+    "react-vertical-timeline-component": "^3.5.3",
     "three": "^0.176.0"
   },
   "devDependencies": {

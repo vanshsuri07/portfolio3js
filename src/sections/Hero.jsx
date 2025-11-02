@@ -18,7 +18,7 @@ const Hero = () => {
           iterationsViscous={16}
           iterationsPoisson={16}
           resolution={0.5}
-          isBounce={true}
+          isBounce={false}
           dt={0.014}
           BFECC={false}
           autoSpeed={0.1}
